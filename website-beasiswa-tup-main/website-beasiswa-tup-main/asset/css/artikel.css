@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav .container h2 {
+    font-size: 18px;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #b71c1c;
+    padding: 10px 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; 
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Group logo and text together */
+.telyu {
+    display: flex;
+    align-items: center;
+}
+
+.span-text {
+    margin-left: 10px; 
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    margin-left: 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    padding: 8px 10px; 
+    border-radius: 6px; 
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff; 
+    transform: scale(1.2);
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #b71c1c;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    flex: 1; /* Mengatur gambar untuk menggunakan 50% dari lebar pada layout */
+    padding-right: 20px; /* Tambahkan padding untuk jarak antara gambar dan teks */
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+    /* CSS untuk menata flex container */
+.flex-container {
+    display: flex; /* Menggunakan Flexbox untuk menyusun gambar dan artikel */
+    justify-content: flex-start; /* Mengatur konten untuk rata kiri */
+    align-items: flex-start; /* Menyelaraskan item di atas */
+    gap: 20px; /* Jarak antara gambar dan artikel */
+}
+
+.article {
+    flex: 1; /* Mengatur konten teks untuk menggunakan 50% dari lebar pada layout */
+}
+
+.article1 {
+    width: 60%; /* Mengatur lebar artikel */
+}
+
+.image-container1 {
+    width: 40%; /* Mengatur lebar gambar */
+}
+
+/* Section untuk grafik dan penjelasan singkat */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.col-md-6 {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Buttons */
+a {
+    text-decoration: none;
+    color: #b71c1c; 
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container, .article, .col-md-6 {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        max-width: 100%; /* Memastikan gambar mengikuti lebar layar pada perangkat kecil */
+    }
+}

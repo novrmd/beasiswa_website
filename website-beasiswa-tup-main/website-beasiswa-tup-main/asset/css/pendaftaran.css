@@ -1,0 +1,199 @@
+/* Basic styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Allow the form to take up more space on smaller screens */
+    }
+}
+
+#beasiswaForm {
+    max-width: 1200px; /* Set a maximum width for the form */
+    width: 100%; /* Make the form responsive and fill available space */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #fff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    max-width: 1000px; /* Adjust the form width to be wider */
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #b71c1c; /* Red background for the nav */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a sleek look */
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Align items in a row with space between */
+    align-items: center; /* Center items vertically */
+}
+
+/* Group logo and text together */
+.telyu {
+    display: flex;
+    align-items: center; /* Vertically center logo and text */
+}
+
+.span1-text {
+    margin-left: 10px; /* Space between logo and text */
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display links in a row */
+}
+
+nav ul li {
+    margin-left: 10px; /* Space between each item */
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 10px; /* Padding for clickable area */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px; /* Rounded corners */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Change to white on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-section h3 {
+    color: #b71c1c; /* Red title */
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"],
+.form-section input[type="tel"],
+.form-section input[type="file"],
+.form-section select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    outline: none;
+    border-color: #b71c1c; /* Red border on focus */
+    box-shadow: 0 0 8px rgba(183, 28, 28, 0.2);
+}
+
+.form-section .btn-red {
+    background-color: #b71c1c; /* Red button */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section .btn-red:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+
+.form-section span {
+    font-size: 12px;
+    margin: 0px;
+}
+
+/* Input styling */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b71c1c;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk tombol "Lihat Berkas" */
+a.btn-berkas {
+    background-color: #4CAF50; /* Warna hijau */
+    border: none;
+    color: white; /* Warna teks */
+    padding: 10px 20px; /* Padding pada tombol */
+    text-align: center; /* Posisi teks di tengah */
+    text-decoration: none; /* Menghilangkan underline */
+    display: inline-block;
+    font-size: 16px; /* Ukuran font */
+    margin: 4px 2px; /* Margin untuk memberi jarak */
+    cursor: pointer; /* Pointer pada hover */
+    border-radius: 8px; /* Membuat sudut tombol melengkung */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi saat hover */
+}
+
+/* Hover effect */
+a.btn-berkas:hover {
+    background-color: #45a049; /* Warna lebih gelap saat hover */
+    transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+}
+
+/* Style untuk tombol saat ditekan */
+a.btn-berkas:active {
+    background-color: #3e8e41; /* Warna saat ditekan */
+    transform: scale(0.95); /* Sedikit mengecilkan saat ditekan */
+}
+
+/* Jika ingin tombol disabled */
+a.btn-berkas:disabled {
+    background-color: #d3d3d3; /* Warna abu-abu */
+    cursor: not-allowed; /* Ikon tidak bisa diklik */
+}
+
